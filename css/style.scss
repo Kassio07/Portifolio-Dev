@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "../assets/colors";
+@import "../assets/fonts";
+@import "../assets/heaader";
+@import "../assets/main";
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+body{
+    font-family: poppins-regular;
+    background-color: $black-fundo;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
