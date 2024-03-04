@@ -1,73 +1,144 @@
-.containerHeader{
-    height: 90vh;
+.containerHeader {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     position: relative;
-    header{
+
+    .ajustHeader {
+        width: 1200px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 78%;
-        padding: 10px 30px;
-        background-color: $white-navMenu;
-        margin: 15px 20px;
-        border-radius: 35px;
-        box-shadow:#FFF -3px 0px 18px -2px;
-        position: fixed;
-        nav{
+        justify-content: center;
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            padding: 7px 75px;
+            background-color: $white-navMenu;
+            margin: 15px 20px;
+            border-radius: 35px;
+            box-shadow: #FFF 1px -2px 18px -3px;
+            position: fixed;
+            z-index: 99;
+            nav {
 
 
-            ul{
-                display: flex;
-                flex-direction: row;
-                    li{
-                
+                ul {
+                    display: flex;
+                    flex-direction: row;
 
-                        a{
+                    li {
+
+
+                        a {
                             display: block;
                             font-family: poppins-semiBold;
                             padding: 7px 20px;
                             margin-right: 5px;
                             border-radius: 20px;
                             color: $black-fundo;
-                            text-transform: uppercase;
-                            font-size: 14px;
+                            font-size: 16px;
                             transition: 0.5s;
 
-                            &:hover{
+                            &:hover {
                                 box-shadow: 0px 1px 15px -5px #FF852A;
                             }
                         }
                     }
                 }
+            }
+
+            .imgNav {
+
+                i {
+                    color: $orange-destaque;
+                    font-size: 45px;
+                    animation-name: giro;
+                    animation-duration: 5s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+            }
         }
     }
 
-    .imgDestaque{
+    .imgDestaque {
         background-image: url('../files/img/destaqueImg.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         height: 400px;
-        width: 90%;
+        width: 70%;
         position: absolute;
-        bottom:-400px;
+        bottom: -400px;
         left: 50%;
-        border-top: 402px solid $orange-destaque;
         transform: translateX(-50%);
-        filter: drop-shadow(6px -6px 176px #FF852A);
+        filter:  drop-shadow(6px -6px 91px #FF852A);
         z-index: -1;
     }
-    .btnHeader{
+
+    .btnHeader {
         background-color: $orange-destaque;
         color: $black-fundo;
         font-family: poppins-semiBold;
         font-size: 14px;
-        text-transform: uppercase;
         padding: 10px 35px;
         border-radius: 20px;
         position: absolute;
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     }
 
+    .nameInfo{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px;
+        position: absolute;
+        bottom: 15%;
+        left: 0;
+        opacity: 0.7;
+
+        .nameTitle{
+            font-family: specialElite;
+            color: $white-navMenu;
+            font-size: 23px;
+            line-height: 4rem;
+            max-width: 450px;
+            flex: 1;
+
+            p{
+                font-size: 20px;
+            }
+        }
+        .imgHeader{
+            flex: 1;
+            font-size: 250px;
+            text-align: right;
+            margin-right: 20px;
+
+            i{
+                color: $orange-destaque;
+                animation-name: giro;
+                animation-duration: 50s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        }
+    }
+
+}
+
+@keyframes giro {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
 }
