@@ -183,7 +183,7 @@
 @media screen and (max-width: 600px) {
   .containerHeader .nameInfo {
     flex-direction: column;
-    bottom: 16%;
+    bottom: 20%;
   }
   .containerHeader .nameInfo .nameTitle {
     font-size: 12PX;
