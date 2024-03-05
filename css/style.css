@@ -91,6 +91,21 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+.containerHeader .ajustHeader .menuHaburguer {
+  display: none;
+  position: fixed;
+  right: 0;
+  margin: 15px;
+  cursor: pointer;
+  z-index: 99;
+}
+.containerHeader .ajustHeader .menuHaburguer div {
+  width: 35px;
+  height: 5px;
+  background-color: #FF852A;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
 .containerHeader .imgDestaque {
   background-image: url("../files/img/destaqueImg.png");
   background-size: 100% 100%;
@@ -153,12 +168,55 @@
   animation-timing-function: linear;
 }
 
+.openMenu {
+  opacity: 1;
+}
+
 @keyframes giro {
   from {
     rotate: 0deg;
   }
   to {
     rotate: 360deg;
+  }
+}
+@media screen and (max-width: 600px) {
+  .containerHeader .nameInfo {
+    flex-direction: column;
+    bottom: 16%;
+  }
+  .containerHeader .nameInfo .nameTitle {
+    font-size: 12PX;
+    max-width: 350px;
+    line-height: 3rem;
+  }
+  .containerHeader .nameInfo .nameTitle p {
+    line-height: 35px;
+  }
+  .containerHeader .nameInfo .imgHeader {
+    text-align: center;
+    font-size: 200px;
+    margin-right: 0px;
+  }
+  .containerHeader .ajustHeader .menuHaburguer {
+    display: block;
+  }
+  .containerHeader .ajustHeader header {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 200px;
+    padding: 20px 75px;
+  }
+  .containerHeader .ajustHeader header .imgNav {
+    margin-bottom: 15px;
+  }
+  .containerHeader .ajustHeader header nav ul {
+    flex-direction: column;
+    line-height: 35px;
+  }
+  .containerHeader .ajustHeader header nav ul li a {
+    padding: 2px 15px;
   }
 }
 main {
