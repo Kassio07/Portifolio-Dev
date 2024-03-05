@@ -218,6 +218,9 @@
   .containerHeader .ajustHeader header nav ul li a {
     padding: 2px 15px;
   }
+  .containerHeader .imgDestaque {
+    filter: drop-shadow(-3px -121px 90px #FF852A);
+  }
 }
 main {
   background-color: #0A101E;
