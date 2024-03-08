@@ -12,5 +12,5 @@ menuHamburguer.addEventListener('click', ()=>{
         menu.style.display = 'flex'
     }else{
         menu.style.display = 'none'
-    }
+    }   
 });
